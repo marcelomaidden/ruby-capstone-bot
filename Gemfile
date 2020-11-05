@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 gem 'rubocop', '~>0.81.0'
-gem install rspec
+gem 'rspec'
 
 # bot specific gems
 gem 'slack-ruby-bot'
