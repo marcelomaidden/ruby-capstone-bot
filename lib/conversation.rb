@@ -1,6 +1,6 @@
 class Conversation
   attr_reader :type, :subtype, :time_stamp, :user, :text
-  
+
   def initialize(type, subtype, time_stamp, user, text)
     @type = type
     @subtype = subtype

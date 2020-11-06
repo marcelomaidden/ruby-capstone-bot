@@ -2,9 +2,8 @@ require_relative '../lib/bot'
 
 bot = Bot.new
 
-while(true) do
-  bot.channels.each do |k, ch|  
+loop do
+  bot.channels.each do |k, _ch|
     bot.conversation_history(k)
   end
 end
-

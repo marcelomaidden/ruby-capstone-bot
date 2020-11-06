@@ -76,7 +76,7 @@ After that run bundle to install all needed Ruby packages
 
   - Invite ruby-capstone-bot by running the command below in a Slack conversation
 
-      /invite ruby-capstone-project
+    /invite ruby-capstone-project
 
   - Mention @ruby-capstone-project on a message
 
@@ -86,11 +86,11 @@ After that run bundle to install all needed Ruby packages
 
 # Linux
 
-  export BOT_USER_OAUTH_ACCESS_TOKEN='string_token_from_bot_oauth_slack'
+    export BOT_USER_OAUTH_ACCESS_TOKEN='string_token_from_bot_oauth_slack'
 
 # Windows
 
-  setx /m BOT_USER_OAUTH_ACCESS_TOKEN='string_token_from_bot_oauth_slack'
+    setx /m BOT_USER_OAUTH_ACCESS_TOKEN='string_token_from_bot_oauth_slack'
 
 More information click [here](https://docs.microsoft.com/pt-br/windows-server/administration/windows-commands/setx)
 
