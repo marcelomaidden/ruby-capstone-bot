@@ -96,7 +96,7 @@ More information click [here](https://docs.microsoft.com/pt-br/windows-server/ad
 
 ## Command to start the program
 
-  BOT_USER_OAUTH_ACCESS_TOKEN=BOT_USER_OAUTH_ACCESS_TOKEN ruby bin/run.rb 
+    BOT_USER_OAUTH_ACCESS_TOKEN=BOT_USER_OAUTH_ACCESS_TOKEN ruby bin/run.rb 
 
 ## Live Demo
 
