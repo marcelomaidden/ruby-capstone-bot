@@ -2,8 +2,6 @@ require_relative '../lib/bot'
 
 bot = Bot.new
 
-public_channels = bot.public_channels
+puts bot.channels.inspect
 
-public_channels["channels"].each { |k, v| puts "#{k}:#{v}\n"}
-
-puts bot.conversation_history('C01E4JG6LG2')
+#puts bot.conversation_history('C01E4JG6LG2')
