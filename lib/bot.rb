@@ -30,14 +30,26 @@ class Bot
   end
 
   def conversation_history(channel)
-    return Bot.get('https://slack.com/api/conversations.history', query: {channel: channel})
+    history = Bot.get('https://slack.com/api/conversations.history', query: {channel: channel})
+
+    messages = []
+
+    messages = history["messages"] unless history["messages"].nil?
+
+    messages.each do
+      |m| 
+      conversation = Conversation.new(m['type'], m['subtype'], m['ts'], m['user'], m['text'])
+      @channels[channel].add_message(conversation)
+    end
   end
 
   def public_channels
-    @channels = []
+    # Add channels and after that messages that belongs to that channel
+    @channels = Hash.new
     request('https://slack.com/api/conversations.list')["channels"].each do
       |ch|
-      @channels << Channel.new(ch['id'], ch['name'], ch['topic'], ch['purpose'])
+      @channels[ch['id']] = Channel.new(ch['id'], ch['name'], ch['topic'], ch['purpose'])
+      conversation_history(ch['id'])
     end
   end
 end

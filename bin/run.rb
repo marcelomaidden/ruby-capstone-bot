@@ -2,6 +2,9 @@ require_relative '../lib/bot'
 
 bot = Bot.new
 
-puts bot.channels.inspect
-
-#puts bot.conversation_history('C01E4JG6LG2')
+bot.channels.each do |k, ch|  
+  puts k
+  ch.messages.each do |m|
+    puts m.text
+  end
+end
