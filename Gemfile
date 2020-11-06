@@ -6,7 +6,6 @@ gem 'rubocop', '~>0.81.0'
 gem 'rspec'
 
 # bot specific gems
-gem 'slack-ruby-bot'
-gem 'celluloid-io'
+gem 'httparty'
 
 # gem "rails"
