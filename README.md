@@ -1,10 +1,56 @@
+# Ruby Capstone Project
+# Create your own BOT
+
+# A project made in Ruby where I made a BOT to automatically answer for Slack messages
+
+![screenshot](./screenshot.png)
+
+
+[Getting Started](#getting-started)
+
 [Requirements](#requirements)
 
-[Set token](#set-token-on-linux-system)
+[Setting token](#set-token-on-linux-system)
 
-[Start program](#command-to-start-the-program)
+[Command to start the program](#command-to-start-the-program)
 
-# Requirements
+[Live demo](#live-demo)
+
+[Author](#author)
+
+[Acknowledgments](#acknowledgements)
+
+[Contributing](#contributing)
+
+[Show your support](#show-your-support)
+
+[License](#license)
+
+## Built With
+
+- Ruby
+- Slack Web API
+- HTTParty
+
+## Getting started
+# In order to run the project locally follow all steps below:
+Install git following the instructions available at [Git](https://git-scm.com/downloads)
+
+Clone the repository typing the command below on your preferred terminal
+
+    git clone https://github.com/marcelomaidden/ruby-capstone-bot/
+
+After you have cloned the repository, enter the directory typing 
+        
+    cd ruby-capstone-bot
+
+Install ruby following the instructions available at [Ruby](https://www.ruby-lang.org/en/downloads/)
+
+Then run the command below
+
+    ruby bin/main.rb
+
+## Requirements
 
   - Add workspace to Slack
   - Create app on api.slack in your new workspace
@@ -37,4 +83,31 @@
 ## Command to start the program
 
   BOT_USER_OAUTH_ACCESS_TOKEN=BOT_USER_OAUTH_ACCESS_TOKEN ruby bin/run.rb 
+
+## Live Demo
+
+[Live Demo Link](https://repl.it/repls/EverlastingRequiredFunnel#README.md)
+
+## Author
+
+**Marcelo Araújo**
+
+- GitHub: [@marcelomaidden](https://github.com/marcelomaidden)
+- Twitter: [@marcelomaidden](https://twitter.com/marcelomaidden)
+- LinkedIn: [Marcelo Fernandes de Araújo](https://www.linkedin.com/in/marcelo-fernandes-de-ara%C3%BAjo-56700a171/)
+
+## Acknowledgements
+- Ruby creators
+
+##  Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## License
+
+This project is [MIT](./LICENSE) licensed.
 
