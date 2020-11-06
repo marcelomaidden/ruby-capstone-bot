@@ -1,3 +1,6 @@
+[Requirements](#requirements)
+[Set token](#set-token-on-linux-system)
+[Start program](#command-to-start-the-program)
 Requirements
 
   - Add workspace to Slack
@@ -15,13 +18,15 @@ Requirements
         - groups:history
         - im:history
         - mpim:history
+  - Invite ruby-capstone-bot by running the command below in a Slack conversation
 
-set token on linux system
+      /invite ruby-capstone-bot
+
+Set token on linux system
 
   export BOT_USER_OAUTH_ACCESS_TOKEN='string_token_from_bot_oauth_slack'
 
-command to start program
-
+Command to start the program
 
   BOT_USER_OAUTH_ACCESS_TOKEN=BOT_USER_OAUTH_ACCESS_TOKEN ruby bin/run.rb 
 
