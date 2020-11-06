@@ -51,7 +51,7 @@ Install ruby following the instructions available at [Ruby](https://www.ruby-lan
 
 After that run bundle to install all needed Ruby packages
 
-  bundle install
+    bundle install
 
 ## Requirements
 
