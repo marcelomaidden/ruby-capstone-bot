@@ -29,6 +29,11 @@ class Bot
     @response
   end
 
+  def chat_post_message(channel, text)
+    result = Bot.post('https://slack.com/api/chat.postMessage', body: {channel: channel, text: text, username: 'bot'})
+    puts result
+  end
+
   def conversation_history(channel)
     history = Bot.get('https://slack.com/api/conversations.history', query: {channel: channel})
 
