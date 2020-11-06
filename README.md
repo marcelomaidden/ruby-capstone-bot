@@ -14,6 +14,7 @@
   - Install your app to your workspace
     - Create Bot Oauth Permissions
       - Scopes
+        - users:read
         - channels:history
         - channels:read
         - chat:write
@@ -24,6 +25,10 @@
   - Invite ruby-capstone-bot by running the command below in a Slack conversation
 
       /invite ruby-capstone-bot
+
+  - Mention @ruby-capstone-project on a message
+
+    @ruby-capstone-project hello
 
 ## Set token on linux system
 
