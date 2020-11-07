@@ -53,7 +53,7 @@ class Calendar
       result = @service.list_calendar_lists(page_token: page_token)
       result.items.each do |e|
         message.concat(e.summary + "\n")
-        message.concat(fetch(e.id) + "\n")
+        message.concat(fetch(e.id) + "\n\n")
       end
       if result.next_page_token != page_token
         page_token = result.next_page_token
@@ -78,7 +78,7 @@ class Calendar
     result.concat("No upcoming events found\n") if response.items.empty?
     response.items.each do |event|
       start = event.start.date || event.start.date_time
-      result.concat("- #{event.summary} (#{start})\n#{event.html_link}\n")
+      result.concat("- #{event.summary} (#{start})\n#{event.html_link}\n\n")
     end
     result
   end
