@@ -1,5 +1,5 @@
 module Auth
-  def show_token
+  def self.show_token
     @token = ENV['BOT_USER_OAUTH_ACCESS_TOKEN']
     @token
   end

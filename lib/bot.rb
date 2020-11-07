@@ -15,7 +15,7 @@ class Bot
   extend Auth
 
   # parameteres used by HTTParty
-  default_params token: show_token
+  default_params token: Auth.show_token
 
   attr_reader :channels, :info, :response
 
