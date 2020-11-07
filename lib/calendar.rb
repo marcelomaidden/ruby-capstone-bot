@@ -45,19 +45,41 @@ class Calendar
     @service.authorization = authorize
   end
 
+  def list
+    page_token = nil
+    message = ""
+
+    begin
+      result = @service.list_calendar_lists(page_token: page_token)
+      result.items.each do |e|
+        message.concat(e.summary + "\n")
+        message.concat(fetch(e.id) + "\n")
+      end
+      if result.next_page_token != page_token
+        page_token = result.next_page_token
+      else
+        page_token = nil
+      end
+    end while !page_token.nil?
+    message
+  end
+
   def fetch(calendar)
     # Fetch the next 10 events for the user
     calendar_id = calendar
+
+    result = ""
     response = @service.list_events(calendar_id,
                                   max_results:   10,
                                   single_events: true,
                                   order_by:      "startTime",
                                   time_min:      DateTime.now.rfc3339)
-    puts "Upcoming events:"
-    puts "No upcoming events found" if response.items.empty?
+    result.concat("Upcoming events:\n")
+    result.concat("No upcoming events found\n") if response.items.empty?
     response.items.each do |event|
       start = event.start.date || event.start.date_time
-      puts "- #{event.summary} (#{start})"
+      result.concat("- #{event.summary} (#{start})\n#{event.html_link}\n")
     end
+    result
   end
 end
