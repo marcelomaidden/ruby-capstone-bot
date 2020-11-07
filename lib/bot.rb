@@ -42,7 +42,7 @@ class Bot
   def reply_conversation(channel, time_stamp)
     # reply to a message when bot was mentioned
     calendar_list = @calendar.list
-    chat_post_message(channel, "Hello! I found some events in your calendar\n\n" + calendar_list, time_stamp)
+    chat_post_message(channel, "Hello! I found some events in your calendar\n\n#{calendar_list}", time_stamp)
   end
 
   def mentioned?(text)
