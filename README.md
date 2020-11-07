@@ -84,7 +84,7 @@ After that run bundle to install all needed Ruby packages
 
 ### Google Api Client
 
-  - Configure Google API following instructions [here](https://developers.google.com/calendar/quickstart/ruby)
+  - Turn on the Google Calendar API [here](https://developers.google.com/calendar/quickstart/ruby)
 
   After that, place credentials.json and token.yaml files on the root directory from the project
 
