@@ -54,7 +54,7 @@ After that run bundle to install all needed Ruby packages
     bundle install
 
 ## Requirements
-
+### Slack Web API
   - Add workspace to Slack
     - more information on [Slack workspace](https://slack.com/get-started#/create)
   - Create app on [Slack API](https://api.slack.com/apps) in your new workspace
@@ -81,6 +81,12 @@ After that run bundle to install all needed Ruby packages
   - Mention @ruby-capstone-project on a message
 
     @ruby-capstone-project hello
+
+### Google Api Client
+
+  - Configure Google API following instructions [here](https://developers.google.com/calendar/quickstart/ruby)
+
+  After that, place credentials.json and token.yaml files on the root directory from the project
 
 ## Set environment variable token
 

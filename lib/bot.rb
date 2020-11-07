@@ -6,6 +6,8 @@ require_relative 'channel'
 
 require_relative 'conversation'
 
+require_relative 'calendar'
+
 class Bot
   # HTTParty is used to request a url via web api
   include HTTParty
@@ -78,3 +80,6 @@ class Bot
     end
   end
 end
+
+calendar = Calendar.new
+calendar.fetch('primary')
