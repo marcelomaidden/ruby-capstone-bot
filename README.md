@@ -104,7 +104,9 @@ More information click [here](https://docs.microsoft.com/pt-br/windows-server/ad
 
 ## How to test
 
+In order to test our project run:
 
+    rspec --format doc
 
 ## Author
 
@@ -116,6 +118,8 @@ More information click [here](https://docs.microsoft.com/pt-br/windows-server/ad
 
 ## Acknowledgements
 - Ruby creators
+- Rspec project
+- Slack Api
 
 ##  Contributing
 
