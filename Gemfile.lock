@@ -87,7 +87,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (>= 2.1.4)
   google-api-client
   httparty
   rspec (~> 3.0)
