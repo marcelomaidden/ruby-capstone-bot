@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'bundler', '>=2.1.4'
 gem 'rspec'
 gem 'rubocop', '~>0.81.0'
-gem 'bundler', '>=2.1.4'
 # bot specific gems
 gem 'httparty'
 
