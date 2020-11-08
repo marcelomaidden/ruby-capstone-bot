@@ -90,7 +90,7 @@ DEPENDENCIES
   bundler (>= 2.1.4)
   google-api-client
   httparty
-  rspec
+  rspec (~> 3.0)
   rubocop (~> 0.81.0)
 
 BUNDLED WITH
