@@ -8,7 +8,7 @@ describe Channel do
     context 'Checks creation for an instance of Channel' do
       it { expect(channel).to be_an_instance_of(Channel) }
 
-      it { expect{channel2}.to raise_error(ArgumentError) }
+      it { expect { channel2 }.to raise_error(ArgumentError) }
 
       it { expect(channel).not_to be_an_instance_of(Integer) }
 
