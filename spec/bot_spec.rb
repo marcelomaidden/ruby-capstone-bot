@@ -3,8 +3,8 @@ require_relative '../lib/calendar'
 require 'httparty'
 require 'google/apis/calendar_v3'
 
- describe Bot do
-#   let(:bot) { Bot.new }
+describe Bot do
+  #   let(:bot) { Bot.new }
   # describe '#initialize' do
   #   context 'Checks Instance of Bot and if bot creates Channels' do
   #     it { expect(bot).to be_an_instance_of(Bot) }
