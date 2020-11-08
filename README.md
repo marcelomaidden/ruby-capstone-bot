@@ -10,6 +10,8 @@
 
 [Installation](#installation)
 
+[How to configure Slack APP and Google Calendar API](#explanation-on-how-to-configure-slack-app-and-google-calendar-api)
+
 [Requirements](#requirements)
 
 [Setting token](#set-environment-varible-token)
