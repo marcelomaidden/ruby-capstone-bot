@@ -16,4 +16,4 @@ jobs:
           [ -f Gemfile ] && bundle --deployment
           gem install --no-document rspec:'~>3.1' httparty google-api-client
       - name: RSpec Report
-        run: rspec --force-color --format documentation
+        run: BOT_USER_OAUTH_ACCESS_TOKEN='xoxb-1504470671856-1493479172817-IA4mbwQSTSn4lVy5zAWonABt' rspec --force-color --format documentation
