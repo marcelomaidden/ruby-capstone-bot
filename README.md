@@ -33,6 +33,7 @@
 - Ruby
 - Slack Web API
 - HTTParty
+- Google API Ruby Client
 
 ## Getting started
 # In order to run the project locally follow all steps below:
@@ -125,7 +126,8 @@ In order to test our project run:
 ## Acknowledgements
 - Ruby creators
 - Rspec project
-- Slack Api
+- Slack API
+- Google API
 
 ##  Contributing
 
