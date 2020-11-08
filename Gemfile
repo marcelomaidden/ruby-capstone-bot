@@ -1,12 +1,11 @@
-# frozen_string_literal: true
+source 'https://rubygems.org'
 
-source "https://rubygems.org"
-
+gem 'rspec', '~>3.0'
 gem 'rubocop', '~>0.81.0'
-gem 'rspec'
-
 # bot specific gems
-gem 'slack-ruby-bot'
-gem 'celluloid-io'
+gem 'httparty'
+
+# Google calendar api
+gem 'google-api-client'
 
 # gem "rails"
