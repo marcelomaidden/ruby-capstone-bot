@@ -21,7 +21,7 @@ class Bot
 
   def initialize
     @info = Bot.get('https://slack.com/api/users.list')['members'].select do |v|
-      v['name'] == 'rubycapstoneproject'
+      v['name'].include?('ruby') && v['name'].include?('bot')
     end[0]
 
     @calendar = Calendar.new
