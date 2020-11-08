@@ -13,25 +13,25 @@ describe Bot do
     end
   end
 
-  describe '#request' do
-    it 'Checks method request' do
-      expect(bot.request('https://slack.com/api/conversations.list')).to be_an_instance_of(HTTParty::Response)
-    end
-  end
+  # describe '#request' do
+  #   it 'Checks method request' do
+  #     expect(bot.request('https://slack.com/api/conversations.list')).to be_an_instance_of(HTTParty::Response)
+  #   end
+  # end
 
-  describe '#chat_post_message' do
-    it 'Checks methos chat_post_message' do
-      expect { bot.chat_post_message('C01E4QK0A75', 'text', '1604795990.024300') }
-        .to output(String).to_stdout
-    end
-  end
+  # describe '#chat_post_message' do
+  #   it 'Checks methos chat_post_message' do
+  #     expect { bot.chat_post_message('C01E4QK0A75', 'text', '1604795990.024300') }
+  #       .to output(String).to_stdout
+  #   end
+  # end
 
-  describe '#reply_conversation' do
-    it 'Checks conversation reply' do
-      expect { bot.reply_conversation('C01E4QK0A75', '1604795990.024300') }
-        .to output(String).to_stdout
-    end
-  end
+  # describe '#reply_conversation' do
+  #   it 'Checks conversation reply' do
+  #     expect { bot.reply_conversation('C01E4QK0A75', '1604795990.024300') }
+  #       .to output(String).to_stdout
+  #   end
+  # end
 
   describe '#mentioned?' do
     it 'Checks if bot was mentioned' do
