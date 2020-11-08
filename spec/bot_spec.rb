@@ -5,13 +5,13 @@ require 'google/apis/calendar_v3'
 
 describe Bot do
   let(:bot) { Bot.new }
-  describe '#initialize' do
-    context 'Checks Instance of Bot and if bot creates Channels' do
-      it { expect(bot).to be_an_instance_of(Bot) }
+  # describe '#initialize' do
+  #   context 'Checks Instance of Bot and if bot creates Channels' do
+  #     it { expect(bot).to be_an_instance_of(Bot) }
 
-      it { expect(bot.channels).to include({ String => Channel }) }
-    end
-  end
+  #     it { expect(bot.channels).to include({ String => Channel }) }
+  #   end
+  # end
 
   # describe '#request' do
   #   it 'Checks method request' do
