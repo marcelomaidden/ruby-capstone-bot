@@ -103,7 +103,7 @@ More information click [here](https://docs.microsoft.com/pt-br/windows-server/ad
 
 ## Command to start the program
 
-    BOT_USER_OAUTH_ACCESS_TOKEN=$BOT_USER_OAUTH_ACCESS_TOKEN ruby bin/run.rb 
+    BOT_USER_OAUTH_ACCESS_TOKEN=$BOT_USER_OAUTH_ACCESS_TOKEN bundle exec ruby bin/run.rb 
 
 ## Live Demo
 
@@ -113,7 +113,7 @@ More information click [here](https://docs.microsoft.com/pt-br/windows-server/ad
 
 In order to test our project run:
 
-    rspec --format doc
+    bundle exec rspec --format doc
 
 ## Author
 
