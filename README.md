@@ -54,6 +54,14 @@ After that run bundle to install all needed Ruby packages
 
     bundle install
 
+## Explanation on how to configure Slack APP and Google Calendar API
+
+https://www.loom.com/share/4b442db4c7b7487682305a6db1224532?sharedAppSource=personal_library
+
+https://www.loom.com/share/e26b55c4f87847e686dac077b92de2ef?sharedAppSource=personal_library
+
+https://www.loom.com/share/ba1bc757304f419eb7ccc5e10ea2e41e?sharedAppSource=personal_library
+
 ## Requirements
 ### Slack Web API
   - Add workspace to Slack
