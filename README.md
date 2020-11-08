@@ -87,11 +87,11 @@ https://www.loom.com/share/ba1bc757304f419eb7ccc5e10ea2e41e?sharedAppSource=pers
 
   - Invite ruby-capstone-bot by running the command below in a Slack conversation
 
-    /invite ruby-capstone-project
+    /invite ruby-capstone-bot
 
   - Mention @ruby-capstone-project on a message
 
-    @ruby-capstone-project hello
+    @ruby-capstone-bot hello
 
 ### Google Api Client
 
