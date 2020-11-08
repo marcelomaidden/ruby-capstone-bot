@@ -29,6 +29,11 @@ class Bot
     public_channels
   end
 
+  def self.test_connectivity
+    puts Bot.get('https://slack.com/api/api.test')
+    Bot.get('https://slack.com/api/api.test')['ok'] == true
+  end
+
   def request(url, _query = nil)
     @response = Bot.get(url)
   end
