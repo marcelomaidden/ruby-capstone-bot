@@ -1,5 +1,7 @@
 require_relative '../lib/bot'
 require_relative '../lib/calendar'
+require 'httparty'
+require 'google/apis/calendar_v3'
 
 describe Bot do
   let(:bot) { Bot.new }
