@@ -17,7 +17,7 @@ class Bot
   # parameteres used by HTTParty
   default_params token: Auth.show_token
 
-  attr_reader :channels, :info, :response
+  attr_reader :channels, :info, :response, :calendar
 
   def initialize
     @info = Bot.get('https://slack.com/api/users.list')['members'].select do |v|
