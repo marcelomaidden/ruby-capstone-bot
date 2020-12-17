@@ -1,7 +1,7 @@
 # Ruby Capstone Project
 # Create your own BOT
 
-# A project made in Ruby where I made a BOT to automatically answer for Slack messages
+# A project made in Ruby where I made a BOT using Slack Web API and Google Calendar API to automatically send a message on Slack with the upcoming events present on the users' Calendar  
 
 ![screenshot](./screenshot.png)
 
